@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #fefefe;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.left-panel {
+  background: #7a5df2;
+  flex: 1;
+  padding: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.shoe {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.tab-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tab-buttons button {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.tab-buttons .active {
+  background: rgba(255,255,255,0.2);
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+.right-panel {
+  background: #fff;
+  flex: 1;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  width: 70px;
+  margin: 0 auto 30px;
+  display: block;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.forgot {
+  display: block;
+  text-align: right;
+  margin-bottom: 20px;
+  color: #7a5df2;
+  text-decoration: none;
+}
+
+.login-btn {
+  width: 100%;
+  background: #7a5df2;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.or {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #888;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.google {
+  background: #db4437;
+}
+
+.facebook {
+  background: #3b5998;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+    text-align: center;
+  }
+
+  .shoe {
+    max-width: 300px;
+  }
+}
